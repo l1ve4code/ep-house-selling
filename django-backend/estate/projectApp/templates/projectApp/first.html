@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Продажа недвижимости</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Продажа недвижимости</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/admin">Админ-панель</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logic1">Приложение №1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logic2">Приложение №2</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class = "container">
+    {% for el in lo %}
+      <div class = "alert alert-warning">
+        <h3><b>Тип объекта:</b> {{el.object_type}}</h3>
+        <p><b>ID Района:</b> {{el.id_rayona}}</p>
+        <p><b>ID города:</b> {{el.id_goroda}}</p>
+        <p><b>Адрес:</b> {{el.adres}}</p>
+        <p><b>Кол-во этажей:</b> {{el.kolvo_etashei}}</p>
+        <p><b>Этаж:</b> {{el.etash}}</p>
+        <p><b>Кол-во комнат:</b> {{el.kolvo_komnat}}</p>
+        <p><b>Площадь:</b> {{el.plozhad}}</p>
+        <p><b>Хоз. постройки:</b> {{el.xoz_postroyki}}</p>
+        <p><b>Описание:</b> {{el.opisanie}}</p>
+        <p><b>Стоимость:</b> {{el.stoimost}}</p>
+        <p><b>ID продавца:</b> {{el.id_prodavca}}</p>
+        <p><b>Актуальность:</b> {{el.actualnost}}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>
