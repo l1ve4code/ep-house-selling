@@ -1,0 +1,36 @@
+<app-up-nav></app-up-nav>
+<div class="container">
+  <div class="mt-5">
+      <div class="inner-form">
+        <div class="input-field">
+          <input class="form-control" [(ngModel)]="searchField" id="choices-text-preset-values" type="text" placeholder="Type to search..." />
+        </div>
+      </div>
+      <div class="suggestion-wrap d-flex justify-content-around mt-2">
+        <span (click)="changeCostIncrease()" class="click">Price by increase</span>
+        <span (click)="changeCostUncrease()" class="click">Descending price</span>
+      </div>
+  </div>
+  <div class="card-body d-flex flex-row flex-wrap justify-content-around">
+    <div *ngFor="let card of offers | search: searchField | filter: stoimost | paginate: { itemsPerPage: 3, currentPage: page }; let i = index;" class="card" style="width: 18rem;">
+      <img src="/assets/img/house.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Offer №{{ i + 1 }}</h5>
+        <p class="card-text">{{ card.opisanie }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item special-color"><b>Address:</b> {{ card.adres }}</li>
+        <li class="list-group-item special-color"><b>Area:</b> {{ card.plozhad }}m<sup>2</sup></li>
+        <li class="list-group-item special-color"><b>Price:</b> {{ card.stoimost }}$</li>
+      </ul>
+      <div class="card-body text-center">
+        <a href="#" class="card-link">Check</a>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center align-items-center">
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>
+
+<app-low-nav></app-low-nav>

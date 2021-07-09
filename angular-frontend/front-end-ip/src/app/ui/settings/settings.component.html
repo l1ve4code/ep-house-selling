@@ -1,0 +1,78 @@
+<app-up-nav></app-up-nav>
+<div [formGroup]="userEditDataForm" class="container mt-5 mb-5">
+  <div class="row gutters">
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="account-settings">
+            <div class="user-profile">
+              <div class="user-avatar">
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Maxwell Admin">
+              </div>
+              <h5 class="user-name">{{ this.userService.getSurname() + " " + this.userService.getName() }}</h5>
+            </div>
+            <div class="about">
+              <h5 class="mb-2 text-primary">About</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis eros sed urna fringilla.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <h6 class="mb-3 text-primary">Personal Details</h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="fullName">Name</label>
+                <input type="text" formControlName="name" class="form-control" id="fullName" placeholder="Enter name">
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="eMail">Surname</label>
+                <input type="email" formControlName="familia" class="form-control" id="eMail" placeholder="Enter surname">
+              </div>
+            </div>
+          </div>
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <h6 class="mb-3 text-primary">Credentials</h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="Street">Username</label>
+                <input type="name" formControlName="login" class="form-control" id="Street" placeholder="Enter username">
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="ciTy">Password</label>
+                <input type="name" formControlName="password" class="form-control" id="ciTy" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="sTate">Accept password</label>
+                <input type="text" formControlName="re_password" class="form-control" id="sTate" placeholder="Enter accept password">
+              </div>
+            </div>
+          </div>
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="text-right">
+                <button type="button" id="submit" name="submit" class="btn btn-secondary" (click)="clearFormData()">Cancel</button>
+                <button type="button" id="submit" name="submit" class="btn btn-primary" [disabled]="!userEditDataForm.valid" (click)="updateUserData()">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-low-nav></app-low-nav>

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">EP | House selling</a>
+        </li>
+        <li *ngIf="this.userService.getRole() == 'Admin'"><a class="nav-link mt-2" routerLink="/dashboard">Dashboard</a></li>
+        <li *ngIf="this.userService.getRole() == 'Seller'"><a class="nav-link mt-2" routerLink="/constructor">Constructor</a></li>
+        <li *ngIf="this.userService.getRole() && this.userService.getRole() != 'Admin' && this.userService.getRole() != 'Seller'"><a class="nav-link mt-2" routerLink="/houses">Houses</a></li>
+        <li *ngIf="this.userService.getRole() && this.userService.getRole() == 'Admin'"><a class="nav-link mt-2" routerLink="/admin">Admin UI</a></li>
+        <li *ngIf="this.userService.getRole()"><a class="nav-link mt-2" routerLink="/settings">Settings</a></li>
+        <li *ngIf="this.userService.getToken()"><a class="nav-link mt-2">Your role: <b>{{ this.userService.getRole() }}</b></a></li>
+      </ul>
+      <form class="d-flex">
+        <label class="mt-2 me-2 text-secondary" *ngIf="this.userService.getToken()">Hello, {{ this.userService.getSurname() + " " + this.userService.getName() }}</label>
+        <button class="btn btn-outline-success" routerLink="/login" *ngIf="!this.userService.getToken()">Sign in</button>
+        <button class="btn btn-outline-danger" (click)="logout()" *ngIf="this.userService.getToken()">Log out</button>
+      </form>
+    </div>
+  </div>
+</nav>

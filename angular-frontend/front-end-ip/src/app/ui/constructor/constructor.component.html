@@ -1,0 +1,95 @@
+<app-up-nav></app-up-nav>
+<div class="page-wrapper bg-dark p-t-100 p-b-50">
+  <div class="wrapper wrapper--w900">
+    <div class="card card-6">
+      <div class="card-heading">
+        <h2 class="title">House offer</h2>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="formAddData">
+          <div class="form-row">
+            <div class="name">Object type</div>
+            <div class="value">
+              <input formControlName="object_type" class="input--style-6" type="text" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Area ID</div>
+            <div class="value">
+              <input formControlName="id_rayona" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">City ID</div>
+            <div class="value">
+              <input formControlName="id_goroda" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Address</div>
+            <div class="value">
+              <input formControlName="adres" class="input--style-6" type="text" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Floors amount</div>
+            <div class="value">
+              <input formControlName="kolvo_etashei" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Floor</div>
+            <div class="value">
+              <input formControlName="etash" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Rooms amount</div>
+            <div class="value">
+              <input formControlName="kolvo_komnat" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Area<sup>2</sup></div>
+            <div class="value">
+              <input formControlName="plozhad" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Buildings</div>
+            <div class="value">
+              <input formControlName="xoz_postroyki" class="input--style-6" type="text" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Description</div>
+            <div class="value">
+              <input formControlName="opisanie" class="input--style-6" type="text" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Price</div>
+            <div class="value">
+              <input formControlName="stoimost" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Seller ID</div>
+            <div class="value">
+              <input formControlName="id_prodavca" class="input--style-6" type="number" name="full_name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="name">Actually</div>
+            <div class="value">
+              <input formControlName="actualnost" class="input--style-6" type="checkbox" name="full_name">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button [disabled]="!this.formAddData.valid" (click)="sendData()" class="btn btn--radius-2 btn--blue-2" type="submit">Send request</button>
+      </div>
+    </div>
+  </div>
+</div>
