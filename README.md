@@ -32,9 +32,9 @@
 
 ## Ссылки на проект
 
-[Angular (FRONT-END)](https://duckduckgo.com)<br>
-[Django (BACK-END)](https://duckduckgo.com)<br>
-[Landing](https://duckduckgo.com)<br>
+[Angular (FRONT-END)](http://angular.std-926.ist.mospolytech.ru/#/)<br>
+[Django (BACK-END)](http://backend.std-926.ist.mospolytech.ru)<br>
+[Landing](http://landing.std-926.ist.mospolytech.ru)<br>
 [Документация/ Видео](https://duckduckgo.com)<br>
 
 ## Разработчик
