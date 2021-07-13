@@ -4,8 +4,8 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Предоставленный инженерный проект, выполнен студентом:
-учебной группы: **191-322**,
+Предоставленный инженерный проект, выполнен студентом:<br>
+учебной группы: **191-322**,<br>
 студент: **Веденин Иван**
 
 ## Задание
@@ -32,10 +32,10 @@
 
 ## Ссылки на проект
 
-[Angular (FRONT-END)](https://duckduckgo.com)
-[Django (BACK-END)](https://duckduckgo.com)
-[Landing](https://duckduckgo.com)
-[Документация/ Видео](https://duckduckgo.com)
+[Angular (FRONT-END)](https://duckduckgo.com)<br>
+[Django (BACK-END)](https://duckduckgo.com)<br>
+[Landing](https://duckduckgo.com)<br>
+[Документация/ Видео](https://duckduckgo.com)<br>
 
 ## Разработчик
 
