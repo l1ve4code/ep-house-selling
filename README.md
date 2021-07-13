@@ -36,7 +36,7 @@
 [Django (BACK-END)](http://backend.std-926.ist.mospolytech.ru)<br>
 [Landing](http://landing.std-926.ist.mospolytech.ru)<br>
 [Figma](https://www.figma.com/file/HzJN1cCQWIEdNOmO0rWa5v/Инженерный-проект-2021-%7C-Продажа-недвижимости?node-id=0%3A1)<br>
-[Документация/ Видео](https://duckduckgo.com)<br>
+[Документация/ Видео](https://drive.google.com/drive/folders/1srb4Q2POpqu1eIKVLq4gjeO_auyjaUKD?usp=sharing)<br>
 
 ## Разработчик
 
