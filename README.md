@@ -35,7 +35,7 @@
 [Angular (FRONT-END)](http://angular.std-926.ist.mospolytech.ru/#/)<br>
 [Django (BACK-END)](http://backend.std-926.ist.mospolytech.ru)<br>
 [Landing](http://landing.std-926.ist.mospolytech.ru)<br>
-[Figma](https://www.figma.com/file/HzJN1cCQWIEdNOmO0rWa5v/Инженерный-проект-2021-%7C-Продажа-недвижимости?node-id=0%3A1)<br>
+[Figma](https://www.figma.com/file/HzJN1cCQWIEdNOmO0rWa5v/%D0%98%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-2021-%D0%9F%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8?node-id=0%3A1)<br>
 [Документация/ Видео](https://drive.google.com/drive/folders/1srb4Q2POpqu1eIKVLq4gjeO_auyjaUKD?usp=sharing)<br>
 
 ## Разработчик
